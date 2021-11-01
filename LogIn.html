@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>	 
+	  <!-- Bootstrap -->
+	  <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	  <link href="css/common.css" rel="stylesheet">
+	  <link href="css/LogIn.css" rel="stylesheet">
+	  <link href="css/font-awesome/css/all.min.css" rel="stylesheet"> 
+	   <!-- jQuery  -->
+	  <script src="js/jquery-3.4.1.min.js"></script>
+	  <script src="js/popper.min.js"></script> 
+	  <script src="js/bootstrap-4.4.1.js"></script>
+	  <script>
+		  $(document).ready(function(){
+			  $("#blackscreen").hide();
+			  $("#navimb").hide();
+			  $("#searchfillmb").hide();
+			  
+			  $("#iconmenu").click(function(){
+				  $("#navimb").slideToggle();
+				  $("#blackscreen").fadeToggle();
+				  $("#iconmenu i").toggleClass("fa-bars fa-times");
+				  $("#searchfillmb").fadeOut();
+			  })
+			  $(".searchicon").click(function(){
+				  $("#searchfillmb").fadeToggle();
+				  $("#blackscreen").fadeOut();
+			  })
+			  
+			  $("#blackscreen").click(function(){
+				  $("#navimb").slideUp();
+				  $("#blackscreen").fadeOut();
+				  $("#iconmenu i").toggleClass("fa-bars fa-times");
+			  })
+		  })
+	  </script>
+  </head>
+  <body>
+	     <!--blackscreen-->
+	  <div class="container-fluid" id="blackscreen"></div>
+	<!--header-->
+	  <div class="container-fluid" id="header">
+		  <div class="row">
+			  <div class="col-xl-2
+						  col-lg-2
+						  col-md-3
+						  col-sm-4
+						  col-4" id="logo">
+				  <a href="Home.html"><img src="image/logo/logo.png" class="img-fluid"></a>
+			  </div>
+			  <div class="col-xl-4 offset-xl-2
+						  col-lg-5 offset-lg-2
+						  col-md-6 offset-md-1
+						  d-none d-md-block" id="deal">
+				  FREE SHIPPING on orders $200 or more !
+			  </div>
+		  </div>
+	  </div>
+	  <!--navi-->
+	  <div class="container-fluid" id="navibig">
+		  <div class="row">
+			  <div class="col-xl-8
+						  col-lg-8
+						  col-md-9
+						  d-none d-md-block navi">
+				  <ul>
+					   <li>
+						    <a href="">HOME</a>
+						    <a href="">MEN</a>
+						    <a href="">WOMEN</a>
+						    <a href="">ACCESSORIES</a>
+						    <a href="">CONTACT</a>
+						   <a href="">NEWS</a>
+					   </li>
+				  </ul>
+			  </div>
+			  <div class="col-sm-1
+						  col-1 d-md-none" id="iconmenu"><i class="fas fa-bars"></i></div>
+			  <div class=" col-xl-4
+						  col-lg-4
+						  col-md-3 d-none d-md-block searchbox">
+				  <input type="text" class="d-none d-lg-block" id="searchfill">
+				<button class="searchicon"><i class="fas fa-search"></i></button>
+				  <a href="" class="icon"><i class="far fa-shopping-cart"></i></a>
+				  <a href="" class="icon"><i class="far fa-user-alt"></i></a>
+			  </div>
+			  <div class="col-sm-1 offset-sm-9
+						  col-1 offset-9 d-md-none iconsmb">
+				  <button class="searchicon"><i class="fas fa-search"></i></button>
+			  </div>
+		  </div>
+	  </div>
+	  <!--navimb-->
+	  <div class="container-fluid d-md-none">
+		  <div class="row">
+			  <div class="col-sm-8
+						  col-8" id="navimb">
+				  <ul>
+					  <li> <a href="">HOME</a></li>
+					  <li> <a href="">MEN</a></li>
+					  <li> <a href="">WOMEN</a></li>
+					  <li> <a href="">ACCESSORIES</a></li>
+					  <li> <a href="">CONTACT</a></li>
+					  <li> <a href="">NEWS</a></li>
+					  <li> <a href="">CART <i class="far fa-shopping-cart icon"></i></a></li>
+					  <li> <a href="">USER <i class="far fa-user-alt icon"></i></a></li>
+				  </ul>
+			  </div>
+		  </div>
+	  </div>
+	  <!--searchmb-->
+	  <div class="container">
+		  <input type="text" class="d-lg-none" id="searchfillmb">
+	  </div>
+	  <div class="container" style="padding-top: 45px">
+	  <div class="row">
+		  <div class="col-xl-6
+					  col-lg-6
+					  col-md-12
+					  col-sm-12
+					  col-12" id="noidung">
+			  <div class="row" id="login">
+			     <div class="col-xl-12
+							 col-lg-12
+							 col-md-12
+							 col-sm-12
+							 col-12"><h1>LOG IN</h1></div>
+			  </div>
+			  <div class="col-xl-12
+						  col-lg-12
+						  col-md-12
+						  col-sm-12
+						  col-12" id="emails" >
+			  <input type="text" id="emailaddress" name="name" value="" placeholder="Email address">
+			  </div>
+			  <div class="col-xl-12
+						  col-lg-12
+						  col-md-12
+						  col-sm-12
+						  col-12" id="pass">
+			  <input type="text" id="password" name="name" value="" placeholder="Pass Word">
+			  </div>
+			  <div class="row">
+			  <div class="col-xl-6
+						  col-lg-6
+						  col-md-6
+						  col-sm-6
+						  col-6" >
+					  <input type="checkbox" name="material" value="dieukien" id="dk">
+					  <label for="dk" id="jav">Keep me logged in</label>
+				  </div>
+				  <div class="col-xl-6
+						      col-lg-6
+						      col-sm-6
+						      col-md-6
+						      col-6" id="forgot">
+			  <ul>
+				  <li><a>forgot password?</a></li>
+				  </ul>
+			  </div>
+			  </div>
+			  <div class="container">
+			  <div class="row">
+			  <div class="col-xl-12
+						  col-lg-12
+						  col-md-12
+						  col-sm-12
+						  col-12" id="bylogging">
+				  <ul>
+				  <li><a>By logging in, you agree to our website <u>Privacy Policy</u> and <u>Terms of Use</u>.</a></li>
+				  </ul>
+				  </div>
+			  </div>
+		
+			  </div>
+			<div class="container">
+			  <div class="row">
+				<div class="col-xl-12
+						  col-lg-12
+						  col-md-12
+						  col-sm-12
+						  col-12" id="butlogin">
+				  <form action="Cart.html">
+    <input type="submit" value="Login" />
+</form>
+				  </div>
+				</div>
+			  </div>
+			  </div><!--noidung-->
+		  <div class="col-xl-6
+					  col-lg-6
+					  d-none d-lg-block" id="image">
+		  <img src="image/sp/giay-air-max-97-pt-082-nu.jpg"
+			   class="img-fluid" width="530px" height="530px">
+		  </div><!--image-->
+		  </div>
+	  </div><!--CONTENT-->
+	  <!--footer-->
+	  <div class="container-fluid" id="footer">
+		  <div class="row">
+			  <div class="col-xl-2 col-lg-2 col-md-5 col-sm-5 col-5 footernavi link">
+				  <ul><li><h6>Product</h6></li>
+					  <li> <a href="">Shoes</a></li>
+					  <li> <a href="">Accesessories</a></li>
+					  <li> <a href="">Gift Cards</a></li>
+					  <li> <a href="">New Arrivals</a></li>
+					  <li> <a href="">Best Seller</a></li>
+					  <li> <a href="">Sale</a></li>
+				  </ul>
+			  </div>
+			  <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6 col-6 footernavi link">
+				  <ul><li><h6>About Nike'DT</h6></li>
+					  <li> <a href="">News</a></li>
+					  <li> <a href="">Company</a></li>
+					  <li> <a href="">Careers</a></li>
+					  <li> <a href="">Sustainabillity</a></li>
+					  <li> <a href="">COVID-19 information Center</a></li>
+				  </ul>
+			  </div>
+			  <div class="col-xl-3 col-lg-3 col-md-5 col-sm-5 col-5 footernavi link">
+				  <ul><li><h6>Support</h6></li>
+					  <li> <a href="">Help</a></li>
+					  <li> <a href="">Shopping</a></li>
+					  <li> <a href="">How to clean</a></li>
+					  <li> <a href="">Sore Locator</a></li>
+					  <li> <a href="">Order Tracker</a></li>
+					  <li> <a href="">Promotions</a></li>
+					  <li> <a href="">Size chart</a></li>
+					  <li> <a href="">Returns & Exchanges</a></li>
+				  </ul>
+			  </div>
+			  <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6 col-6 footernavi link">
+				  <ul><li><h6>More Inspiration</h6></li>
+					  <li class="iconsocial"> 
+						  <a href=""><i class="fab fa-facebook-square"></i></a>
+					      <a href=""><i class="fab fa-instagram-square"></i></a>
+					      <a href=""><i class="fab fa-twitter-square"></i></a>
+					      <a href=""><i class="fab fa-pinterest-square"></i></a>
+					  </li>
+					  <li> <a href=""><strong>Hotline:</strong> 033 771 000</a></li>
+					  <li> <a href="">F&F building 541, Nguyen Trai Street, 01 District, Ho Chi Minh City.</a></li>
+					  <li> <a href=""><strong>Business Registration:</strong> 153810</a></li>
+					  <li> <a href=""><strong>E-Commerce Permit:</strong> 2390-309</a></li>
+				  </ul>
+			  </div>
+		  </div>
+		  <div class="row margintop30">
+			  <div class="col-xl-2
+						  col-lg-3
+						  col-md-3
+						  col-sm-4
+						  col-4 location">
+				  <i class="fas fa-map-marker-alt"></i> vietnam
+			  </div>
+			  <div class="col-xl-9
+						  col-lg-6
+						  col-md-6
+						  col-sm-7
+						  col-8" id="if"><i class="far fa-copyright"></i> 2021 Nike'DT. Inc All Rights Reserved
+			  </div>
+		  </div>
+	  </div>
+	</body>
+	
+</html>
